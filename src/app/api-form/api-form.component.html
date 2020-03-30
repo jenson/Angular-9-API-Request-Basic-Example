@@ -1,0 +1,21 @@
+<div class="api-form-div">
+
+    <form name="api-form">
+
+        <h2>Angular 9 API Request (Service) Minimal Example.</h2>
+        <h3>Click On The Below Button To Get Data From <i><a href="https://jsonplaceholder.typicode.com/comments" target="_blank">jsonplaceholder</a></i> API.</h3>
+
+        <input (click)="fetchData()" type="button" class="btn-api" value="Get Data From API."/>
+
+    </form>
+
+    <div *ngFor="let obj of json_response">
+
+        <p class="details">
+            Name : {{obj.name}}<br/>
+            Email : {{obj.email}}
+        </p>
+
+    </div>
+
+</div>
